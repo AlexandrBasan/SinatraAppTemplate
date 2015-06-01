@@ -12,7 +12,9 @@ class Main < Sinatra::Base
   end
   post '/json' do
     data = JSON.parse(request.body.read)
-    puts "#{data}"
+    puts "Application received JSON request from external source: #{data}"
+    content_type :json
+    'We received your request'.to_json
   end
   get '/params' do
   	# matches "GET /params?title=foo&author=bar"
