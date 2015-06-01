@@ -12,5 +12,7 @@ Run Sinatra:
 
 	$ cd your_app_folder
 	# gem install sinatra
+	or
+	$ bundle install
     $ rackup -p 4568
     localhost:4568
