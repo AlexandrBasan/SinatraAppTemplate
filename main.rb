@@ -6,6 +6,7 @@ require 'debugger' # Use this by insert debugger anywhere in your code.
 class Main < Sinatra::Base
   get '/' do
     "Hello, world!"
+    erb :main
   end
   post '/:data' do
     "Your data is, #{params[:data]}!"
